@@ -1,0 +1,91 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.aq</groupId>
+  <artifactId>ptn-blder-mvn</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+	<properties>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+		<java.version>11</java.version>
+	</properties>
+	<packaging>war</packaging>
+  <name>pattern builder</name>
+  <description>pattern builder maven project</description>
+  
+  <dependencies>
+  <dependency>
+	<groupId>org.apache.commons</groupId>
+	<artifactId>commons-lang3</artifactId>
+	<version>3.3.2</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-core</artifactId>
+		<version>2.4.4</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-databind</artifactId>
+		<version>2.4.4</version>
+	</dependency>
+	
+	<!--  extra util jar over JSR 310 -->
+	<dependency>
+    <groupId>org.threeten</groupId>
+    <artifactId>threeten-extra</artifactId>
+    <version>0.9</version>
+</dependency>
+	
+	<dependency>
+	<groupId>commons-io</groupId>
+	<artifactId>commons-io</artifactId>
+	<version>2.4</version>
+</dependency>
+	
+	
+	<!--  alternative to jackson which is part of j2ee 7 JSR JSR 353 -->
+	<dependency>
+		<groupId>org.glassfish</groupId>
+   	 <artifactId>javax.json</artifactId>
+    	<version>1.0.4</version>
+    </dependency>
+    
+    <dependency>
+		<groupId>org.slf4j</groupId>
+		<artifactId>slf4j-log4j12</artifactId>
+		<version>1.7.9</version>
+	</dependency>
+    
+    <dependency>
+	<groupId>com.ibm.icu</groupId>
+	<artifactId>icu4j</artifactId>
+	<version>53.1</version>
+</dependency>
+    
+
+
+	<dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>4.12</version>
+	</dependency>
+
+  
+  </dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<source>11</source>
+					<target>11</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
